@@ -1,123 +1,94 @@
 # -*- mode: snippet -*-
-# name: Weekly Review 
-# key: weeklyr
+# name: Weekly Review Questions 
+# key: .wrq
 # --
 
-  ** Weekly Review Questions
-    *** Which goals did I achieve?
+*** Weekly Review Questions
+   - Which goals did I achieve? ::
+     ${1:Include Answer}
 
-    	${1:Include Answer}
-
-    *** What powered me to accomplish these goals?
-
-    	${2:Include Answer}
+   - What powered me to accomplish these goals? ::
+     ${2:Include Answer}
 	
-    *** What challenges did I encounter?
-
-    	${3:Include Answer}
+   - What challenges did I encounter? ::
+     ${3:Include Answer}
 	
-    *** How did I overcome them?
-
-    	${4:Include Answer}
+   - How did I overcome them? ::
+     ${4:Include Answer}
 	
-    *** Was accomplishing these goals the best use of my time?
-
-    	${5:Include Answer}
+   - Was accomplishing these goals the best use of my time? ::
+     ${5:Include Answer}
 	
-    *** Did my focus on these goals blind me to unexpected opportunities for better use of my time?
-
-    	${6:Include Answer}
+   - Did my focus on these goals blind me to unexpected opportunities for better use of my time? ::
+     ${6:Include Answer}
 	
-    *** Did meeting these goals add to my personal integrity account?
-
-    	${7:Include Answer}
+   - Did meeting these goals add to my personal integrity account? ::
+     ${7:Include Answer}
 	
-    *** Which goals did I not achieve?
-
-    	${8:Include Answer}
+   - Which goals did I not achieve? ::
+     ${8:Include Answer}
 	
-    *** What kept me from accomplishing these goals?
-
-    	${9:Include Answer}
+   - What kept me from accomplishing these goals? ::
+     ${9:Include Answer}
 	
-    *** As a result of the choices I've made, did I use my time in better ways than I had planned?
-
-    	${10:Include Answer}
+   - As a result of the choices I've made, did I use my time in better ways than I had planned? ::
+     ${10:Include Answer}
 	
-    *** Did my choices make deposits or withdrawals from my personal integrity account?
-
-    	${11:Include Answer}
+   - Did my choices make deposits or withdrawals from my personal integrity account? ::
+     ${11:Include Answer}
 	
-    *** What unmet goals should I carry into the coming week?
-
-    	${12:Include Answer}
+   - What unmet goals should I carry into the coming week? ::
+     ${12:Include Answer}
 	
-    *** Did I take time for renewal, reflection and recommitment?
-
-    	${13:Include Answer}
+   - Did I take time for renewal, reflection and recommitment? ::
+     ${13:Include Answer}
 	
-    *** Did I take the time to sharpen the saw on a daily basis?
-
-    	${14:Include Answer}
+   - Did I take the time to sharpen the saw on a daily basis? ::
+     ${14:Include Answer}
 	
-    *** How did the time spent in renewal impact other areas?
-
-    	${15:Include Answer}
+   - How did the time spent in renewal impact other areas? ::
+     ${15:Include Answer}
 	
-    *** In what ways was able to create synergy between roles and goals?
-
-    	${16:Include Answer}
+   - In what ways was able to create synergy between roles and goals? ::
+     ${16:Include Answer}
 	
-    *** How was I able to apply character and competence gains in one role to other roles?
-
-    	${17:Include Answer}
+   - How was I able to apply character and competence gains in one role to other roles? ::
+     ${17:Include Answer}
 	
-    *** What principles did I apply or fail to apply during the week? What was the effect?
-
-    	${18:Include Answer}
+   - What principles did I apply or fail to apply during the week? What was the effect? ::
+     ${18:Include Answer}
 	
-    *** How much of my time was spent in quadrant II? Quadrant I? Quadrant III? Quadrant IV?
-
-    	${19:Include Answer}
+   - How much of my time was spent in quadrant II? Quadrant I? Quadrant III? Quadrant IV? ::
+     ${19:Include Answer}
 	
-    *** What can I learn from the week as a whole?
-
-    	${20:Include Answer}
+   - What can I learn from the week as a whole? ::
+     ${20:Include Answer}
 	
-    *** What patterns of success or failure do I see in setting and achieving goals?
-
-    	${21:Include Answer}
+   - What patterns of success or failure do I see in setting and achieving goals? ::
+     ${21:Include Answer}
 	
-    *** Am I setting goals that are realistic but challenging?
-
-    	${22:Include Answer}
+   - Am I setting goals that are realistic but challenging? ::
+     ${22:Include Answer}
 	
-    *** What keeps getting in the way of accomplishing my goals?
-
-    	${23:Include Answer}
+   - What keeps getting in the way of accomplishing my goals? ::
+     ${23:Include Answer}
 	
-    *** What patterns or processes can be improved?
-
-    	${24:Include Answer}
+   - What patterns or processes can be improved? ::
+     ${24:Include Answer}
 	
-    *** Am I creating unrealistic expectations? How can I modify them?
-
-    	${25:Include Answer}
+   - Am I creating unrealistic expectations? How can I modify them? ::
+     ${25:Include Answer}
 	
-    *** As we set our goals, we look at each role, and then we pause in the space between stimulus and response to ask: What are the one or two most important things I could do in this role this week that would have the greatest positive impact?
-
-    	${26:Include Answer}
+   - As we set our goals, we look at each role, and then we pause in the space between stimulus and response to ask: What are the one or two most important things I could do in this role this week that would have the greatest positive impact? ::
+     ${26:Include Answer}
 	
-    *** What are my big rocks that need filling first and what can I fill in with whatever sand, gravel, and water we need to add?
-
-    	${27:Include Answer}
+   - What are my big rocks that need filling first and what can I fill in with whatever sand, gravel, and water we need to add? ::
+     ${27:Include Answer}
 	
-    *** What are my roles? And what are the goals associated with each role?
-
-    	${28:Include Answer}
+   - What are my roles? And what are the goals associated with each role? ::
+     ${28:Include Answer}
 	
-    *** How can I sharpen the saw in physical/social/emotional/mental and spiritual roles?
-
-    	${29:Include Answer}
+   - How can I sharpen the saw in physical/social/emotional/mental and spiritual roles? ::
+     ${29:Include Answer}
 	
 

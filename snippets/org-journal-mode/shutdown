@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: Shutdown Questions
+# key: .sdq
+# --
+
+*** Shutdown
+   - What commitments do you have for tomorrow? ::
+     ${1:Include Answer}
+     
+   - What memorable things happened today? ::
+     ${2:Include Answer}
+
+   - How did you get closer to achieving your weekly goals today? ::
+     ${3:Include Answer}

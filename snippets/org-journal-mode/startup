@@ -1,0 +1,27 @@
+# -*- mode: snippet -*-
+# name: Startup Questions
+# key: .spq
+# --
+
+*** Startup
+
+   - What do you need to get done today? ::
+     ${1:Include Answer}
+
+   - What are you going to do to get closer to achieving your weekly goals? ::
+     ${2: Include Answer}
+
+   - How can I make today better than yesterday? ::
+     ${3:Include Answer}
+
+   - What will make today great? Why is today an opportunity instead of another day to get through?
+     ${4:Include Answer}
+
+   - What are 3 things you are grateful for? ::
+     1. ${5:Include Answer}
+     2. ${6:Include Answer}
+     3. ${7:Include Answer}
+
+
+   - Is there anything that you want to say that's on your mind?
+     ${8:Include Answer}
