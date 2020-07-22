@@ -1,19 +1,21 @@
 (menu-bar-mode -1)
 (tool-bar-mode -1)
+(setq backup-directory-alist
+      `(("." . ,(concat user-emacs-directory "backups"))))
 (scroll-bar-mode -1)
 (global-linum-mode 1)
-(setq ido-enable-flex-matching t)
-(setq ido-everywhere t)
-(ido-mode 1)
-(setq ido-enable-flex-matching t)
 (setq inhibit-startup-message t
       inhibit-startup-echo-area-message t)
 (add-to-list 'load-path "~/.emacs.d/elpa")
+
 (defalias 'yes-or-no-p 'y-or-n-p)
 (setq make-backup-files nil)
 (show-paren-mode 1)
 (eldoc-mode 1)
 (add-hook 'after-init-hook 'global-company-mode)
+
+(ido-mode t)
+(define-key (cdr ido-minor-mode-map-entry) [remap write-file] nil)
 
 (require 'package)
 
@@ -26,6 +28,11 @@
 (require 'org-journal)
 (require 'undo-tree)
 (global-undo-tree-mode)
+
+(require 'ivy)
+(ivy-mode 1)
+(setq ivy-use-virtual-buffers t)
+(setq enable-recursive-minibuffers t)
 
 (autoload 'markdown-mode "markdown-mode"
    "Major mode for editing Markdown files" t)
@@ -108,6 +115,8 @@ and subsequent lines as the task note."
              (applescript-quote-string note)))))
 
 (global-set-key (kbd "C-c o") 'send-region-to-omnifocus)
+
+(require 'applescript-mode)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
