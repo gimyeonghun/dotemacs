@@ -11,7 +11,7 @@
 
 (if (eq system-type 'darwin)
     (setq journal-path "~/Documents/journal")
-  (setq journal-path "something-else"))
+  (setq journal-path "C:\\Users\\gim\\Documents\\journal"))
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 (setq make-backup-files nil)
@@ -73,3 +73,17 @@
 
 (use-package taskpaper-mode
   :mode (("\\.todo\\'" . taskpaper-mode)))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (company yasnippet ivy evil-visual-mark-mode org-journal try use-package))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
