@@ -42,7 +42,8 @@
 (use-package org-journal
   :ensure t
   :config
-  (setq org-journal-dir journal-path))
+  (setq org-journal-dir journal-path)
+  (setq org-journal-date-format "%A, %d %B %Y"))
 
 (use-package undo-tree
   :commands global-undo-tree-mode)
