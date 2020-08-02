@@ -79,3 +79,9 @@
   :mode (("\\.todo\\'" . taskpaper-mode)))
 
 (setq python-shell-interpreter "python3")
+
+(use-package flycheck
+  :ensure t
+  :init (global-flycheck-mode))
+(add-hook 'after-init-hook #'global-flycheck-mode)
+(add-to-list 'flycheck-checkers 'textlint)
