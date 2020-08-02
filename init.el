@@ -11,9 +11,7 @@
 
 (if (eq system-type 'darwin)
     (setq journal-path "~/Documents/journal")
-  (setq journal-path "C:\\Users\\gim\\Documents\\journal")
-  (add-to-list 'default-frame-alist '(font . "Consolas" ))
-  (set-face-attribute 'default t :font "Consolas" ))
+  (setq journal-path "C:\\Users\\gim\\Documents\\journal"))
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 (setq make-backup-files nil)
@@ -47,9 +45,7 @@
   (setq org-journal-dir journal-path))
 
 (use-package undo-tree
-  :ensure t
-  :init
-  (global-undo-tree-mode))
+  :commands global-undo-tree-mode)
 
 (use-package ivy
   :demand t
@@ -63,7 +59,7 @@
 	 ("\\.md\\'" . markdown-mode)))
 
 (use-package ace-jump-mode
-  :ensure t
+  :defer t
   :bind (:map evil-normal-state-map
 	      ("SPC" . ace-jump-mode)))
 
@@ -77,3 +73,17 @@
 
 (use-package taskpaper-mode
   :mode (("\\.todo\\'" . taskpaper-mode)))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (company yasnippet ivy evil-visual-mark-mode org-journal try use-package))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
