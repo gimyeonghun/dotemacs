@@ -35,7 +35,13 @@
   (package-install 'use-package))
 
 (when (memq window-system '(mac ns x))
-  (exec-path-from-shell-initialize))
+  (exec-path-from-shell-initialize)
+  (setq python-shell-interpreter "python3")
+  (use-package flycheck
+    :ensure t
+    :init (global-flycheck-mode))
+  (add-hook 'after-init-hook #'global-flycheck-mode)
+  (add-to-list 'flycheck-checkers 'textlint))
 
 (use-package try
   :ensure t)
@@ -52,8 +58,8 @@
 
 (use-package undo-tree
   :ensure t
-  :init t
-  (global-undo-tree-mode)
+  :init
+  (global-undo-tree-mode))
 
 (use-package ivy
   :demand t
@@ -81,14 +87,4 @@
 
 (use-package taskpaper-mode
   :mode (("\\.todo\\'" . taskpaper-mode)))
-<<<<<<< HEAD
 
-(setq python-shell-interpreter "python3")
-
-(use-package flycheck
-  :ensure t
-  :init (global-flycheck-mode))
-(add-hook 'after-init-hook #'global-flycheck-mode)
-(add-to-list 'flycheck-checkers 'textlint)
-=======
->>>>>>> 9ef9b342c1507a7616619f74f0822d37f786adf8
