@@ -11,7 +11,9 @@
 
 (if (eq system-type 'darwin)
     (setq journal-path "~/Documents/journal")
-  (setq journal-path "C:\\Users\\gim\\Documents\\journal"))
+  (setq journal-path "C:\\Users\\gim\\Documents\\journal")
+  (add-to-list 'default-frame-alist '(font . "Consolas"))
+  (set-face-attribute 'default t :font "Consolas"))
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 (setq make-backup-files nil)
@@ -49,7 +51,9 @@
   (setq org-journal-date-format "%A, %d %B %Y"))
 
 (use-package undo-tree
-  :commands global-undo-tree-mode)
+  :ensure t
+  :init t
+  (global-undo-tree-mode)
 
 (use-package ivy
   :demand t
@@ -63,7 +67,7 @@
 	 ("\\.md\\'" . markdown-mode)))
 
 (use-package ace-jump-mode
-  :defer t
+  :ensure t
   :bind (:map evil-normal-state-map
 	      ("SPC" . ace-jump-mode)))
 
@@ -77,6 +81,7 @@
 
 (use-package taskpaper-mode
   :mode (("\\.todo\\'" . taskpaper-mode)))
+<<<<<<< HEAD
 
 (setq python-shell-interpreter "python3")
 
@@ -85,3 +90,5 @@
   :init (global-flycheck-mode))
 (add-hook 'after-init-hook #'global-flycheck-mode)
 (add-to-list 'flycheck-checkers 'textlint)
+=======
+>>>>>>> 9ef9b342c1507a7616619f74f0822d37f786adf8
